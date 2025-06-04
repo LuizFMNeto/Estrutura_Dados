@@ -14,7 +14,6 @@ public class ProcessadorArquivos {
     }
     
     public void processarArquivos() throws IOException {
-        // Read files with UTF-8 encoding
         List<String> linhasPalavrasChave = Files.readAllLines(Paths.get("palavras-chave.txt"), StandardCharsets.UTF_8);
         for (String palavra : linhasPalavrasChave) {
             palavrasChave.add(palavra.trim().toLowerCase());
@@ -29,14 +28,12 @@ public class ProcessadorArquivos {
     }
     
     private String normalizarPalavra(String palavra) {
-        // Remove acentos mantendo as letras
         String normalizada = Normalizer.normalize(palavra, Normalizer.Form.NFD);
         normalizada = normalizada.replaceAll("\\p{M}", "");
         return normalizada.toLowerCase();
     }
     
     private void processarLinha(String linha, int numeroLinha) {
-        // Updated regex to include all Portuguese characters
         String[] palavras = linha.toLowerCase()
                                 .replaceAll("[^a-záàâãéèêíïóôõöúüçñ\\s-]", "")
                                 .split("\\s+");

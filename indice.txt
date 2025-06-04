@@ -1,16 +1,8 @@
-and 2 5 8 9 9 11 13 14 16 19 21
-be 1 16
-by 5 9 20
-conhecimentos 11
-criatividade 8
-desenvolvimento 4
-easy 2 19
-ferramentas 15
-human-engineered 1
-leitura 3 18
-mundo 14
-pensamento 8
-pessoais 14
-programming 1 5 9 13
-programs 2 9
-to 2 2 10 19 19 21
+conhecimentos 4
+criatividade 2 5
+desenvolvimento 3 5
+ferramentas 6 10
+leitura 1 5 7 10
+mundo 4 7
+pensamento 3 9
+pessoais 4 8
